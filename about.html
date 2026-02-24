@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darul Hikma – About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Darul Hikma</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header fade-in">
+        <div class="container">
+            <h2>About Us</h2>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Cards -->
+    <section class="about-mission fade-in">
+        <div class="container">
+            <div class="mission-vision-grid">
+                <div class="mission-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Our Mission</h3>
+                    <p>To nurture Muslim youth through holistic education, financial empowerment, and spiritual guidance, rooted in Islamic values.</p>
+                </div>
+                <div class="vision-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Our Vision</h3>
+                    <p>A generation of confident, compassionate, and contributing Muslims who embody the teachings of Islam in their daily lives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline fade-in">
+        <div class="container">
+            <h2>Our Journey</h2>
+            <div class="timeline-grid">
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h3>Foundation</h3>
+                        <p>Darul Hikma was established by a group of educators and community leaders.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2013</div>
+                    <div class="timeline-content">
+                        <h3>First Youth Camp</h3>
+                        <p>Launched our annual summer camp, now serving over 200 youth each year.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2017</div>
+                    <div class="timeline-content">
+                        <h3>Scholarship Program</h3>
+                        <p>Started providing financial aid for higher education; 50+ students supported.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h3>Community Center</h3>
+                        <p>Opened a dedicated center offering classes, mentorship, and events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team fade-in">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300" alt="Dr. Ahmed" loading="lazy">
+                    <h3>Dr. Ahmed Hassan</h3>
+                    <p>Founder & Director</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300" alt="Sr. Fatima" loading="lazy">
+                    <h3>Sr. Fatima Noor</h3>
+                    <p>Head of Education</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/300" alt="Br. Yusuf" loading="lazy">
+                    <h3>Br. Yusuf Ali</h3>
+                    <p>Youth Coordinator</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Darul Hikma. All rights reserved.</p>
+            <p class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Support Button -->
+    <div class="floating-support">
+        <button id="supportToggle" class="support-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div class="support-options" id="supportOptions">
+            <a href="https://wa.me/1234567890" target="_blank" class="support-item whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <button class="support-item ai-chat" id="aiChatBtn">
+                <i class="fas fa-robot"></i> AI Assistant
+            </button>
+        </div>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-modal-content">
+            <div class="chat-header">
+                <h3>Darul Hikma Assistant</h3>
+                <button class="close-chat" id="closeChat">&times;</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">
+                    <p>Assalamu Alaikum! I'm here to help with any questions about Darul Hikma. You can ask about our programs, mission, contact info, and more.</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Type your question...">
+                <button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

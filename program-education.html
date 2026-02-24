@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darul Hikma – Education Program</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Darul Hikma</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html" class="active">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header fade-in" style="background: linear-gradient(135deg, #e6f0e6, #d4e5d4);">
+        <div class="container">
+            <i class="fas fa-graduation-cap" style="font-size: 4rem; color: #2e5d3a; margin-bottom: 1rem;"></i>
+            <h2>Education Program</h2>
+        </div>
+    </section>
+
+    <section class="program-detail fade-in">
+        <div class="container">
+            <div class="program-detail-grid">
+                <div class="program-detail-content">
+                    <h3>Empowering Minds, Building Futures</h3>
+                    <p>Our Education program is designed to support Muslim youth at every stage of their academic journey. We believe that education is the key to breaking cycles of poverty and building strong, confident communities.</p>
+                    <p>Through scholarships, after-school tutoring, and STEM workshops, we help students excel academically while staying connected to their Islamic identity. Our dedicated volunteers and educators provide personalized attention to ensure no child is left behind.</p>
+                    
+                    <h4>Key Features</h4>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check-circle"></i> Need-based scholarships for K-12 and college</li>
+                        <li><i class="fas fa-check-circle"></i> One-on-one tutoring in core subjects</li>
+                        <li><i class="fas fa-check-circle"></i> STEM camps and robotics clubs</li>
+                        <li><i class="fas fa-check-circle"></i> College application mentorship</li>
+                        <li><i class="fas fa-check-circle"></i> Islamic studies integration</li>
+                    </ul>
+
+                    <div class="program-stats-mini">
+                        <div class="stat">
+                            <span class="stat-number">1,500+</span>
+                            <span>Students Supported</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span>Volunteer Tutors</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span>Graduation Rate</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn">Apply for Scholarship</a>
+                        <a href="contact.html" class="btn btn-outline">Volunteer as Tutor</a>
+                    </div>
+                </div>
+                <div class="program-detail-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Students learning" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials specific to Education -->
+    <section class="testimonials fade-in">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Thanks to Darul Hikma's scholarship, I was able to attend university. Now I'm an engineer, and I volunteer as a tutor to give back."</p>
+                    <div class="testimonial-author">— Ahmed, 26</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The after-school program helped my son improve his grades and gain confidence. The tutors are wonderful role models."</p>
+                    <div class="testimonial-author">— Umm Khadijah, parent</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Darul Hikma. All rights reserved.</p>
+            <p class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Support Button -->
+    <div class="floating-support">
+        <button id="supportToggle" class="support-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div class="support-options" id="supportOptions">
+            <a href="https://wa.me/1234567890" target="_blank" class="support-item whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <button class="support-item ai-chat" id="aiChatBtn">
+                <i class="fas fa-robot"></i> AI Assistant
+            </button>
+        </div>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-modal-content">
+            <div class="chat-header">
+                <h3>Darul Hikma Assistant</h3>
+                <button class="close-chat" id="closeChat">&times;</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">
+                    <p>Assalamu Alaikum! I'm here to help with any questions about Darul Hikma. You can ask about our programs, mission, contact info, and more.</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Type your question...">
+                <button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darul Hikma – Charity Program</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Darul Hikma</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html" class="active">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header fade-in" style="background: linear-gradient(135deg, #e6f0e6, #d4e5d4);">
+        <div class="container">
+            <i class="fas fa-donate" style="font-size: 4rem; color: #2e5d3a; margin-bottom: 1rem;"></i>
+            <h2>Charity Program</h2>
+        </div>
+    </section>
+
+    <section class="program-detail fade-in">
+        <div class="container">
+            <div class="program-detail-grid">
+                <div class="program-detail-content">
+                    <h3>Sharing Blessings, Spreading Hope</h3>
+                    <p>Our Charity program is a channel for your Zakat and Sadaqah to reach those who need it most. We organize food drives, winter clothing distributions, and support for local masjids, ensuring that your donations make a tangible difference in our community.</p>
+                    <p>We follow strict Shariah compliance and transparency, providing donors with detailed reports on how their funds are used.</p>
+                    
+                    <h4>Key Initiatives</h4>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check-circle"></i> Monthly food boxes for low-income families</li>
+                        <li><i class="fas fa-check-circle"></i> Winter coat and blanket drives</li>
+                        <li><i class="fas fa-check-circle"></i> Zakat distribution to eligible individuals</li>
+                        <li><i class="fas fa-check-circle"></i> Support for local masjid programs</li>
+                        <li><i class="fas fa-check-circle"></i> Emergency disaster relief</li>
+                    </ul>
+
+                    <div class="program-stats-mini">
+                        <div class="stat">
+                            <span class="stat-number">10,000+</span>
+                            <span>Meals Provided</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span>Families Served</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span>Donation Transparency</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn">Volunteer for Drives</a>
+                    </div>
+                </div>
+                <div class="program-detail-image">
+                    <img src="https://placehold.co/600x400/2e5d3a/white?text=Charity+Program" alt="Food donation" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials fade-in">
+        <div class="container">
+            <h2>Voices of Gratitude</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"The food boxes from Darul Hikma have been a lifeline for my family. Jazakum Allahu khayran for your kindness."</p>
+                    <div class="testimonial-author">— Fatima, single mother</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I trust Darul Hikma with my Zakat because they are transparent and truly help the needy in our community."</p>
+                    <div class="testimonial-author">— Abdul Rahman, donor</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section with Modal Trigger -->
+    <section class="donation-section fade-in">
+        <div class="container">
+            <h2>Support Our Charity</h2>
+            <p class="donation-intro">Your generosity fuels our mission. Choose how you'd like to give.</p>
+            
+            <div class="donation-options">
+                <div class="donation-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>One-Time Gift</h3>
+                    <p class="amount">Any amount helps</p>
+                    <p>Make a single donation to support our ongoing programs.</p>
+                </div>
+                <div class="donation-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Monthly Giving</h3>
+                    <p class="amount">$25 / month</p>
+                    <p>Provide sustained support with a monthly contribution.</p>
+                </div>
+                <div class="donation-card">
+                    <i class="fas fa-mosque"></i>
+                    <h3>Zakat</h3>
+                    <p class="amount">Calculate your Zakat</p>
+                    <p>Fulfill your obligation with confidence – we ensure it reaches those in need.</p>
+                </div>
+            </div>
+
+            <div class="donation-cta">
+                <!-- Button to open bank selection modal -->
+                <button id="donateNowBtn" class="btn btn-large">Donate Now</button>
+                <p class="donation-note">For large gifts or endowment, please <a href="contact.html">contact us</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bank Selection Modal (Enhanced) -->
+    <div id="bankModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <!-- Payment Methods Grid View -->
+            <div id="paymentGrid" class="modal-view">
+                <h2>Select Payment Method</h2>
+                <div class="bank-grid">
+                    <div class="bank-item" data-bank="cbe">
+                        <i class="fas fa-university"></i>
+                        <span>CBE</span>
+                    </div>
+                    <div class="bank-item" data-bank="cbo">
+                        <i class="fas fa-university"></i>
+                        <span>CBO</span>
+                    </div>
+                    <div class="bank-item" data-bank="hijra">
+                        <i class="fas fa-university"></i>
+                        <span>Hijra Bank</span>
+                    </div>
+                    <div class="bank-item" data-bank="rammis">
+                        <i class="fas fa-university"></i>
+                        <span>Rammis Bank</span>
+                    </div>
+                    <div class="bank-item" data-bank="zamzam">
+                        <i class="fas fa-university"></i>
+                        <span>Zamzam Bank</span>
+                    </div>
+                    <div class="bank-item" data-bank="telebirr">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Telebirr</span>
+                    </div>
+                    <div class="bank-item" data-bank="mpesa">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>M-Pesa</span>
+                    </div>
+                </div>
+                <p class="modal-note">Click on a method to see account details.</p>
+            </div>
+
+            <!-- Payment Details View (hidden initially) -->
+            <div id="paymentDetails" class="modal-view" style="display: none;">
+                <button id="backToGridBtn" class="btn-back"><i class="fas fa-arrow-left"></i> Back</button>
+                <div id="detailsContent">
+                    <!-- Content filled by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Darul Hikma. All rights reserved.</p>
+            <p class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Support Button -->
+    <div class="floating-support">
+        <button id="supportToggle" class="support-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div class="support-options" id="supportOptions">
+            <a href="https://wa.me/1234567890" target="_blank" class="support-item whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <button class="support-item ai-chat" id="aiChatBtn">
+                <i class="fas fa-robot"></i> AI Assistant
+            </button>
+        </div>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-modal-content">
+            <div class="chat-header">
+                <h3>Darul Hikma Assistant</h3>
+                <button class="close-chat" id="closeChat">&times;</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">
+                    <p>Assalamu Alaikum! I'm here to help with any questions about Darul Hikma. You can ask about our programs, mission, contact info, and more.</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Type your question...">
+                <button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

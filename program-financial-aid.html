@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darul Hikma – Financial Aid Program</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Darul Hikma</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html" class="active">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header fade-in" style="background: linear-gradient(135deg, #e6f0e6, #d4e5d4);">
+        <div class="container">
+            <i class="fas fa-hand-holding-heart" style="font-size: 4rem; color: #2e5d3a; margin-bottom: 1rem;"></i>
+            <h2>Financial Aid Program</h2>
+        </div>
+    </section>
+
+    <section class="program-detail fade-in">
+        <div class="container">
+            <div class="program-detail-grid">
+                <div class="program-detail-content">
+                    <h3>Support When It Matters Most</h3>
+                    <p>Our Financial Aid program provides a safety net for Muslim families facing economic hardship. Rooted in the Islamic principles of qard hasan (benevolent loan) and sadaqah, we offer interest-free loans and emergency grants to help families overcome temporary challenges.</p>
+                    <p>We also conduct financial literacy workshops to empower individuals with budgeting, saving, and debt management skills – all from an Islamic perspective.</p>
+                    
+                    <h4>Key Features</h4>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check-circle"></i> Interest-free loans (qard hasan) up to $2,000</li>
+                        <li><i class="fas fa-check-circle"></i> Emergency grants for urgent needs (rent, utilities, medical)</li>
+                        <li><i class="fas fa-check-circle"></i> Financial literacy workshops</li>
+                        <li><i class="fas fa-check-circle"></i> Zakat distribution assistance</li>
+                        <li><i class="fas fa-check-circle"></i> Confidential and compassionate counseling</li>
+                    </ul>
+
+                    <div class="program-stats-mini">
+                        <div class="stat">
+                            <span class="stat-number">$250K+</span>
+                            <span>Aid Distributed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">320+</span>
+                            <span>Families Helped</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span>Repayment Rate (Loans)</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn">Apply for Aid</a>
+                        <a href="contact.html" class="btn btn-outline">Donate to Fund</a>
+                    </div>
+                </div>
+                <div class="program-detail-image">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Financial support" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials fade-in">
+        <div class="container">
+            <h2>Stories of Relief</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"When my husband lost his job, Darul Hikma provided an emergency grant that kept my family afloat. They treated us with dignity and respect."</p>
+                    <div class="testimonial-author">— Mariam, mother of three</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The interest-free loan helped me start a small business. Now I'm self-sufficient and able to help others."</p>
+                    <div class="testimonial-author">— Khalid, small business owner</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Darul Hikma. All rights reserved.</p>
+            <p class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Support Button -->
+    <div class="floating-support">
+        <button id="supportToggle" class="support-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div class="support-options" id="supportOptions">
+            <a href="https://wa.me/1234567890" target="_blank" class="support-item whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <button class="support-item ai-chat" id="aiChatBtn">
+                <i class="fas fa-robot"></i> AI Assistant
+            </button>
+        </div>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-modal-content">
+            <div class="chat-header">
+                <h3>Darul Hikma Assistant</h3>
+                <button class="close-chat" id="closeChat">&times;</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">
+                    <p>Assalamu Alaikum! I'm here to help with any questions about Darul Hikma. You can ask about our programs, mission, contact info, and more.</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Type your question...">
+                <button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

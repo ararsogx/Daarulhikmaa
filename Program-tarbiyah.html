@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darul Hikma – Tarbiyah Program</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Darul Hikma</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html" class="active">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header fade-in" style="background: linear-gradient(135deg, #e6f0e6, #d4e5d4);">
+        <div class="container">
+            <i class="fas fa-mosque" style="font-size: 4rem; color: #2e5d3a; margin-bottom: 1rem;"></i>
+            <h2>Tarbiyah Program</h2>
+            <p style="font-size: 1.2rem;">Spiritual Development & Character Building</p>
+        </div>
+    </section>
+
+    <section class="program-detail fade-in">
+        <div class="container">
+            <div class="program-detail-grid">
+                <div class="program-detail-content">
+                    <h3>Nurturing Hearts, Strengthening Faith</h3>
+                    <p>Tarbiyah (spiritual development) is at the core of our work. We believe that true success lies in balancing worldly knowledge with strong Islamic character. Our program provides a safe, supportive environment for Muslim youth to explore their faith, ask questions, and grow into confident, compassionate adults.</p>
+                    <p>Through weekly halaqas, one-on-one mentoring, and outdoor camps, we help young Muslims develop a deep, personal connection with Allah and embody the beautiful character of Prophet Muhammad (peace be upon him).</p>
+                    
+                    <h4>Key Features</h4>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check-circle"></i> Weekly youth halaqas (discussion circles)</li>
+                        <li><i class="fas fa-check-circle"></i> One-on-one mentorship with positive role models</li>
+                        <li><i class="fas fa-check-circle"></i> Annual weekend camp focused on akhlaq (character)</li>
+                        <li><i class="fas fa-check-circle"></i> Quran study and reflection sessions</li>
+                        <li><i class="fas fa-check-circle"></i> Community service projects</li>
+                    </ul>
+
+                    <div class="program-stats-mini">
+                        <div class="stat">
+                            <span class="stat-number">300+</span>
+                            <span>Active Youth</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25</span>
+                            <span>Trained Mentors</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span>Annual Events</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn">Join a Halaqa</a>
+                        <a href="contact.html" class="btn btn-outline">Become a Mentor</a>
+                    </div>
+                </div>
+                <div class="program-detail-image">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Youth group" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials fade-in">
+        <div class="container">
+            <h2>What Youth Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"The halaqas helped me understand my faith in a way that feels personal. I've made lifelong friends and found a second family."</p>
+                    <div class="testimonial-author">— Zaynab, 17</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"My mentor guided me through tough times and inspired me to be a better Muslim. Now I mentor younger kids myself."</p>
+                    <div class="testimonial-author">— Ibrahim, 22</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Darul Hikma. All rights reserved.</p>
+            <p class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Support Button -->
+    <div class="floating-support">
+        <button id="supportToggle" class="support-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div class="support-options" id="supportOptions">
+            <a href="https://wa.me/1234567890" target="_blank" class="support-item whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <button class="support-item ai-chat" id="aiChatBtn">
+                <i class="fas fa-robot"></i> AI Assistant
+            </button>
+        </div>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-modal-content">
+            <div class="chat-header">
+                <h3>Darul Hikma Assistant</h3>
+                <button class="close-chat" id="closeChat">&times;</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">
+                    <p>Assalamu Alaikum! I'm here to help with any questions about Darul Hikma. You can ask about our programs, mission, contact info, and more.</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Type your question...">
+                <button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
