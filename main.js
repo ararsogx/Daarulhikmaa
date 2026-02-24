@@ -1,3 +1,52 @@
+// ===== DARK MODE TOGGLE (SWITCH ICON) =====
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = themeToggle ? themeToggle.querySelector('i') : null;
+
+// Check localStorage for saved theme
+const savedTheme = localStorage.getItem('darkMode');
+if (savedTheme === 'enabled') {
+    document.body.classList.add('dark-mode');
+    if (themeIcon) {
+        themeIcon.classList.remove('fa-toggle-off');
+        themeIcon.classList.add('fa-toggle-on');
+    }
+} else {
+    // Ensure icon is off if dark mode not enabled
+    if (themeIcon) {
+        themeIcon.classList.remove('fa-toggle-on');
+        themeIcon.classList.add('fa-toggle-off');
+    }
+}
+
+// Toggle theme function
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    
+    // Update icon
+    if (themeIcon) {
+        if (isDark) {
+            themeIcon.classList.remove('fa-toggle-off');
+            themeIcon.classList.add('fa-toggle-on');
+        } else {
+            themeIcon.classList.remove('fa-toggle-on');
+            themeIcon.classList.add('fa-toggle-off');
+        }
+    }
+    
+    // Save preference
+    localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+}
+
+// Add event listener if toggle exists
+if (themeToggle) {
+    themeToggle.addEventListener('click', toggleDarkMode);
+}
+
+// Add event listener if toggle exists
+if (themeToggle) {
+    themeToggle.addEventListener('click', toggleDarkMode);
+}
 // ===== HEADER SCROLL EFFECT =====
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
@@ -165,51 +214,55 @@ const chatBody = document.getElementById('chatBody');
 const chatInput = document.getElementById('chatInput');
 const sendChatBtn = document.getElementById('sendChatBtn');
 
-// Knowledge base
+// Knowledge base – answers are based strictly on website content
 const knowledgeBase = [
     {
-        keywords: ['education', 'learn', 'study', 'school', 'scholarship', 'tutoring'],
-        answer: "Our Education program provides scholarships, after-school tutoring, and STEM workshops. We've supported over 1,500 students. Would you like to know more about eligibility?"
+        keywords: ['education', 'program', 'scholarship', 'tutoring', 'after-school', 'stem', 'college'],
+        answer: "Darul Hikma's Education program provides need-based scholarships, one-on-one tutoring, STEM workshops, and college application mentorship for youth in Fadis Woreda. We've supported over 1,500 students with a 95% graduation rate. You can apply via our Contact page."
     },
     {
-        keywords: ['financial', 'aid', 'money', 'loan', 'emergency', 'qard hasan'],
-        answer: "Financial Aid includes interest-free loans (qard hasan) and emergency grants for families in need. We also offer financial literacy workshops. Contact us for assistance."
+        keywords: ['mission', 'purpose'],
+        answer: "Our mission is to nurture the youth of Fadis Woreda, East Hararge, through quality education rooted in Islamic values, empowering them to become confident and contributing members of society."
     },
     {
-        keywords: ['charity', 'donate', 'zakat', 'sadaqah', 'food', 'clothing'],
-        answer: "Through your Zakat and Sadaqah, we run food drives, winter clothing distributions, and support local families. You can donate via our website or at our center."
+        keywords: ['vision'],
+        answer: "Our vision is a generation of educated, compassionate, and faithful Muslims from Fadis who lead their communities with wisdom and integrity."
     },
     {
-        keywords: ['tarbiyah', 'spiritual', 'islamic', 'mentor', 'halaqa', 'youth', 'camp'],
-        answer: "Tarbiyah (spiritual development) includes weekly youth halaqas, one-on-one mentoring, and an annual camp focused on character building (akhlaq). All youth are welcome."
-    },
-    {
-        keywords: ['mission', 'purpose', 'goal'],
-        answer: "Our mission is to nurture Muslim youth through education, financial aid, charity, and spiritual guidance. We aim to build confident, compassionate young Muslims."
-    },
-    {
-        keywords: ['vision', 'future'],
-        answer: "Our vision is a generation of Muslim youth who are confident in their faith, excel in education, contribute to society, and embody the character of Prophet Muhammad (peace be upon him)."
-    },
-    {
-        keywords: ['contact', 'phone', 'email', 'address', 'location', 'where'],
-        answer: "You can reach us at: 123 Wisdom Street, Anytown, USA. Phone: +1 (555) 123-4567. Email: info@darulhikma.org. Our contact page has a form and map."
+        keywords: ['contact', 'phone', 'email', 'address', 'location', 'map'],
+        answer: "You can reach us at: Fadis Woreda, East Hararge, Oromia, Ethiopia. Phone: +251 912 345 678. Email: info@darulhikma.org. Our contact page has a form and a map."
     },
     {
         keywords: ['volunteer', 'volunteering', 'help'],
-        answer: "We'd love your help! Please visit our Contact page and fill out the volunteer form, or call us directly."
+        answer: "We welcome volunteers! Please fill out the volunteer form on our Contact page or call us directly."
     },
     {
-        keywords: ['program', 'programs', 'offer'],
-        answer: "We offer four core programs: Education, Financial Aid, Charity, and Tarbiyah. Each is designed to support youth holistically. Which one interests you?"
+        keywords: ['donate', 'donation', 'zakat', 'sadaqah', 'cbe', 'cbo', 'rammis', 'hijra', 'telebirr', 'ebirr'],
+        answer: "You can donate via bank transfer or mobile money. Account details: CBE 1000134567890, CBO 2000234567890, Rammis Bank 4000456789012, Hijra Bank 3000345678901. Telebirr: dial *127# and enter merchant 1000123456. Ebirr: dial *123# and enter 1000123457. All funds support our education programs in Fadis."
+    },
+    {
+        keywords: ['team', 'staff', 'founder', 'director'],
+        answer: "Our team includes Dr. Ahmed Hassan (Founder & Director), Sr. Fatima Noor (Head of Education), and Br. Yusuf Ali (Youth Coordinator)."
+    },
+    {
+        keywords: ['history', 'timeline', 'journey'],
+        answer: "Darul Hikma was founded in 2010 by local educators. We launched our first tutoring program in 2013, started scholarships in 2017, and opened our community center in 2022."
+    },
+    {
+        keywords: ['impact', 'stats', 'students', 'families'],
+        answer: "We have supported over 1,500 students, aided 320 families, organized 45 youth programs, and distributed $50,000 in charity. Our education program has held 50 workshops and awarded $250,000 in scholarships."
+    },
+    {
+        keywords: ['testimonial', 'success story'],
+        answer: "Amina, a former scholarship recipient, says: 'Darul Hikma helped me continue my education. Now I'm a teacher giving back to my community.' Many families share similar stories of transformation."
     },
     {
         keywords: ['hello', 'hi', 'assalamu alaikum', 'salam'],
-        answer: "Wa alaikum assalam! How can I assist you today? You can ask about our programs, mission, contact info, or how to get involved."
+        answer: "Wa alaikum assalam! I'm the Darul Hikma assistant. I can answer questions about our education program, mission, contact info, donations, and more. How can I help you today?"
     }
 ];
 
-const defaultAnswer = "I'm not sure I understood. Could you rephrase? You can ask about our programs (education, financial aid, charity, tarbiyah), mission, contact details, or how to volunteer.";
+const defaultAnswer = "I'm sorry, I didn't understand your question. You can ask about our education program, mission, contact details, donations, team, or how to volunteer in Fadis.";
 
 function addMessage(text, sender) {
     const messageDiv = document.createElement('div');
@@ -323,7 +376,8 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
-// ===== BANK SELECTION MODAL (ENHANCED WITH COPY) =====
+
+// ===== BANK SELECTION MODAL (UPDATED) =====
 const donateBtn = document.getElementById('donateNowBtn');
 const bankModal = document.getElementById('bankModal');
 const closeModal = document.querySelector('.close-modal');
@@ -332,7 +386,7 @@ const paymentDetails = document.getElementById('paymentDetails');
 const detailsContent = document.getElementById('detailsContent');
 const backToGridBtn = document.getElementById('backToGridBtn');
 
-// Payment methods data
+// Payment methods data (CBE, CBO, Rammis, Hijra, Telebirr, Ebirr)
 const paymentData = {
     cbe: {
         name: 'Commercial Bank of Ethiopia (CBE)',
@@ -362,13 +416,6 @@ const paymentData = {
         ussd: '*808#',
         instructions: 'Use *808# to access mobile banking and transfer to the provided account.'
     },
-    zamzam: {
-        name: 'Zamzam Bank',
-        accountNumber: '5000567890123',
-        accountHolder: 'Darul Hikma Charity Fund',
-        ussd: '*806#',
-        instructions: 'Dial *806# and follow the menu to send money to the account number above.'
-    },
     telebirr: {
         name: 'Telebirr',
         accountNumber: '1000123456',
@@ -376,19 +423,17 @@ const paymentData = {
         ussd: '*127#',
         instructions: 'Dial *127# and choose "Send Money". Enter the merchant account 1000123456. You will receive a confirmation SMS.'
     },
-    mpesa: {
-        name: 'M-Pesa',
-        accountNumber: '1000123456',
+    ebirr: {
+        name: 'Ebirr',
+        accountNumber: '1000123457',
         accountHolder: 'Darul Hikma',
-        ussd: '*150#',
-        instructions: 'Dial *150# and select "Send Money". Enter the business number 1000123456 and the amount.'
+        ussd: '*123#',
+        instructions: 'Dial *123# and select "Send Money". Enter the account number 1000123457 and the amount. Follow the prompts to complete.'
     }
 };
 
-// Helper function to copy text to clipboard
 function copyToClipboard(text, buttonElement) {
     navigator.clipboard.writeText(text).then(() => {
-        // Show temporary "Copied!" message
         const originalHTML = buttonElement.innerHTML;
         buttonElement.innerHTML = '<i class="fas fa-check"></i>';
         setTimeout(() => {
@@ -400,7 +445,6 @@ function copyToClipboard(text, buttonElement) {
 }
 
 if (donateBtn && bankModal) {
-    // Open modal
     donateBtn.addEventListener('click', () => {
         bankModal.style.display = 'block';
         document.body.style.overflow = 'hidden';
@@ -408,7 +452,6 @@ if (donateBtn && bankModal) {
         paymentDetails.style.display = 'none';
     });
 
-    // Close modal
     const closeModalFunc = () => {
         bankModal.style.display = 'none';
         document.body.style.overflow = '';
@@ -424,7 +467,6 @@ if (donateBtn && bankModal) {
         }
     });
 
-    // Handle bank item click
     const bankItems = document.querySelectorAll('.bank-item');
     bankItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -432,7 +474,6 @@ if (donateBtn && bankModal) {
             const data = paymentData[bankKey];
             if (!data) return;
 
-            // Build details HTML with copy buttons
             let detailsHtml = `
                 <div class="details-card">
                     <h3>${data.name}</h3>
@@ -468,11 +509,9 @@ if (donateBtn && bankModal) {
 
             detailsContent.innerHTML = detailsHtml;
             
-            // Switch view
             paymentGrid.style.display = 'none';
             paymentDetails.style.display = 'block';
 
-            // Add copy button event listeners
             const copyButtons = document.querySelectorAll('.copy-btn');
             copyButtons.forEach(btn => {
                 btn.addEventListener('click', (e) => {
@@ -482,7 +521,6 @@ if (donateBtn && bankModal) {
                 });
             });
 
-            // Add donate now button listener
             const donateNowDetailBtn = document.querySelector('.donate-now-large');
             if (donateNowDetailBtn) {
                 donateNowDetailBtn.addEventListener('click', (e) => {
@@ -493,11 +531,10 @@ if (donateBtn && bankModal) {
         });
     });
 
-    // Back to grid button
     if (backToGridBtn) {
         backToGridBtn.addEventListener('click', () => {
             paymentGrid.style.display = 'block';
             paymentDetails.style.display = 'none';
         });
     }
-}
+            }
