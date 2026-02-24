@@ -21,6 +21,11 @@
                     <li><a href="programs.html">Programs</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <div class="theme-toggle">
+    <button id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+</div>
                 <div class="hamburger" id="hamburger">
                     <span></span>
                     <span></span>
@@ -33,9 +38,9 @@
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h2 class="animate-pop-in">Empowering Muslim Youth Through Knowledge & Compassion</h2>
-            <p class="animate-pop-in delay-1">Education · Financial Aid · Charity · Spiritual Growth (Tarbiyah)</p>
-            <a href="programs.html" class="btn animate-pop-in delay-2">Explore Our Programs</a>
+            <h2 class="animate-pop-in">Empowering Youth Through Education in Fadis</h2>
+            <p class="animate-pop-in delay-1">Scholarships · Tutoring · After‑School Programs</p>
+            <a href="programs.html" class="btn animate-pop-in delay-2">Explore Our Program</a>
         </div>
         <div class="hero-wave">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -47,7 +52,7 @@
     <section class="mission fade-in">
         <div class="container">
             <h2>Our Mission</h2>
-            <p>Darul Hikma is a non-profit organization dedicated to nurturing the next generation of Muslim youth. We provide educational support, financial assistance, charitable services, and spiritual guidance to help young Muslims thrive in faith and life.</p>
+            <p>Darul Hikma is a non-profit organization dedicated to nurturing the youth of Fadis Woreda, East Hararge, through quality education. We provide scholarships, tutoring, and after‑school programs to help young Muslims thrive in faith and life.</p>
         </div>
     </section>
 
@@ -79,7 +84,6 @@
         </div>
     </section>
 
-    <!-- Programs Overview with correct links -->
     <section class="programs-overview fade-in">
         <div class="container">
             <h2>What We Do</h2>
@@ -89,24 +93,6 @@
                     <h3>Education</h3>
                     <p>Scholarships, tutoring, after‑school programs.</p>
                     <a href="program-education.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                    <h3>Financial Aid</h3>
-                    <p>Emergency funds, micro‑loans, and family assistance.</p>
-                    <a href="program-financial-aid.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-donate"></i></div>
-                    <h3>Charity</h3>
-                    <p>Zakat distribution, food drives, and community iftars.</p>
-                    <a href="program-charity.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-mosque"></i></div>
-                    <h3>Tarbiyah</h3>
-                    <p>Islamic mentoring, youth circles, and character building.</p>
-                    <a href="program-tarbiyah.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -120,29 +106,21 @@
                     <div class="testimonial-card">
                         <div class="testimonial-content">
                             <i class="fas fa-quote-left quote-icon"></i>
-                            <p>Darul Hikma helped me continue my education when my family couldn't afford it. Now I'm a teacher, giving back to my community.</p>
+                            <p>Darul Hikma helped me continue my education when my family couldn't afford it. Now I'm a teacher, giving back to my community in Fadis.</p>
                             <div class="testimonial-author">— Amina, 24</div>
                         </div>
                     </div>
                     <div class="testimonial-card">
                         <div class="testimonial-content">
                             <i class="fas fa-quote-left quote-icon"></i>
-                            <p>The youth halaqas transformed my relationship with deen. I found friends who share my values and mentors who guide me.</p>
-                            <div class="testimonial-author">— Yusuf, 19</div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
-                            <p>During a family crisis, Darul Hikma provided emergency funds and emotional support. They are true community pillars.</p>
-                            <div class="testimonial-author">— Fatima, 35</div>
+                            <p>The after‑school program gave my children the support they needed. They are now excelling in school.</p>
+                            <div class="testimonial-author">— Fatima, mother</div>
                         </div>
                     </div>
                 </div>
                 <div class="slider-dots">
                     <span class="dot active" data-index="0"></span>
                     <span class="dot" data-index="1"></span>
-                    <span class="dot" data-index="2"></span>
                 </div>
             </div>
         </div>
@@ -156,6 +134,41 @@
         </div>
     </section>
 
+<!-- ===== DONATION SECTION ===== -->
+<section class="donation-section fade-in">
+    <div class="container">
+        <h2>Support Our Education Programs</h2>
+        <p class="donation-intro">Your generosity helps us provide scholarships and tutoring to the youth of Fadis. Click below to donate via bank transfer or mobile money.</p>
+        
+        <div class="donation-cta">
+            <button id="donateNowBtn" class="btn btn-large">Donate Now</button>
+            <p class="donation-note">For large gifts or endowment, please <a href="contact.html">contact us</a>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Bank Selection Modal (unchanged) -->
+<div id="bankModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="paymentGrid" class="modal-view">
+            <h2>Select Payment Method</h2>
+            <div class="bank-grid">
+                <div class="bank-item" data-bank="cbe"><i class="fas fa-university"></i><span>CBE</span></div>
+                <div class="bank-item" data-bank="cbo"><i class="fas fa-university"></i><span>CBO</span></div>
+                <div class="bank-item" data-bank="rammis"><i class="fas fa-university"></i><span>Rammis Bank</span></div>
+                <div class="bank-item" data-bank="hijra"><i class="fas fa-university"></i><span>Hijra Bank</span></div>
+                <div class="bank-item" data-bank="telebirr"><i class="fas fa-mobile-alt"></i><span>Telebirr</span></div>
+                <div class="bank-item" data-bank="ebirr"><i class="fas fa-mobile-alt"></i><span>Ebirr</span></div>
+            </div>
+            <p class="modal-note">Click on a method to see account details.</p>
+        </div>
+        <div id="paymentDetails" class="modal-view" style="display: none;">
+            <button id="backToGridBtn" class="btn-back"><i class="fas fa-arrow-left"></i> Back</button>
+            <div id="detailsContent"></div>
+        </div>
+    </div>
+</div>
     <footer>
         <div class="container footer-content">
             <p>&copy; 2025 Darul Hikma. All rights reserved.</p>
@@ -169,38 +182,22 @@
 
     <!-- Floating Support Button -->
     <div class="floating-support">
-        <button id="supportToggle" class="support-btn">
-            <i class="fas fa-comment-dots"></i>
-        </button>
+        <button id="supportToggle" class="support-btn"><i class="fas fa-comment-dots"></i></button>
         <div class="support-options" id="supportOptions">
-            <a href="https://wa.me/1234567890" target="_blank" class="support-item whatsapp">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <button class="support-item ai-chat" id="aiChatBtn">
-                <i class="fas fa-robot"></i> AI Assistant
-            </button>
+            <a href="https://wa.me/1234567890" target="_blank" class="support-item whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <button class="support-item ai-chat" id="aiChatBtn"><i class="fas fa-robot"></i> AI Assistant</button>
         </div>
     </div>
 
     <!-- AI Chat Modal -->
     <div class="chat-modal" id="chatModal">
         <div class="chat-modal-content">
-            <div class="chat-header">
-                <h3>Darul Hikma Assistant</h3>
-                <button class="close-chat" id="closeChat">&times;</button>
-            </div>
-            <div class="chat-body" id="chatBody">
-                <div class="chat-message bot">
-                    <p>Assalamu Alaikum! I'm here to help with any questions about Darul Hikma. You can ask about our programs, mission, contact info, and more.</p>
-                </div>
-            </div>
-            <div class="chat-footer">
-                <input type="text" id="chatInput" placeholder="Type your question...">
-                <button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button>
-            </div>
+            <div class="chat-header"><h3>Darul Hikma Assistant</h3><button class="close-chat" id="closeChat">&times;</button></div>
+            <div class="chat-body" id="chatBody"><div class="chat-message bot"><p>Assalamu Alaikum! I'm here to help with any questions about Darul Hikma.</p></div></div>
+            <div class="chat-footer"><input type="text" id="chatInput" placeholder="Type your question..."><button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button></div>
         </div>
     </div>
 
     <script src="main.js"></script>
 </body>
-</html>
+    </html>
