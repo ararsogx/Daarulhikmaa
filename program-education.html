@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darul Hikma – Education Program</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        .program-detail-image svg {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+            background: #e6f0e6;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Darul Hikma</h1>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html" class="active">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header fade-in" style="background: linear-gradient(135deg, #e6f0e6, #d4e5d4);">
+        <div class="container">
+            <i class="fas fa-graduation-cap" style="font-size: 4rem; color: #2e5d3a; margin-bottom: 1rem;"></i>
+            <h2>Education Program</h2>
+        </div>
+    </section>
+
+    <section class="program-detail fade-in">
+        <div class="container">
+            <div class="program-detail-grid">
+                <div class="program-detail-content">
+                    <h3>Empowering Minds, Building Futures in Fadis</h3>
+                    <p>Our Education program is designed to support the youth of Fadis Woreda at every stage of their academic journey. We believe that education is the key to breaking cycles of poverty and building strong, confident communities.</p>
+                    <p>Through scholarships, after-school tutoring, and STEM workshops, we help students excel academically while staying connected to their Islamic identity. Our dedicated volunteers and educators provide personalized attention to ensure no child is left behind.</p>
+                    
+                    <h4>Key Features</h4>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check-circle"></i> Need-based scholarships for K-12 and college</li>
+                        <li><i class="fas fa-check-circle"></i> One-on-one tutoring in core subjects</li>
+                        <li><i class="fas fa-check-circle"></i> STEM camps and robotics clubs</li>
+                        <li><i class="fas fa-check-circle"></i> College application mentorship</li>
+                        <li><i class="fas fa-check-circle"></i> Islamic studies integration</li>
+                    </ul>
+
+                    <div class="program-stats-mini">
+                        <div class="stat">
+                            <span class="stat-number">1,500+</span>
+                            <span>Students Supported</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span>Volunteer Tutors</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span>Graduation Rate</span>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn">Apply for Scholarship</a>
+                        <a href="contact.html" class="btn btn-outline">Volunteer as Tutor</a>
+                    </div>
+                </div>
+                <div class="program-detail-image">
+                    <!-- Lightweight inline SVG illustration -->
+                    <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
+                        <rect width="600" height="400" fill="#d4e5d4" rx="20" ry="20"/>
+                        <circle cx="300" cy="150" r="60" fill="#2e5d3a" opacity="0.2"/>
+                        <circle cx="300" cy="150" r="40" fill="#2e5d3a" opacity="0.3"/>
+                        <text x="300" y="170" font-family="Poppins, sans-serif" font-size="24" fill="#2e5d3a" text-anchor="middle">📚</text>
+                        <path d="M200 250 L400 250 L380 320 L220 320 Z" fill="#2e5d3a" opacity="0.5"/>
+                        <rect x="260" y="260" width="80" height="60" fill="#FFD966" rx="8"/>
+                        <text x="300" y="300" font-family="Poppins, sans-serif" font-size="14" fill="#1b3b2a" text-anchor="middle">Education</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials fade-in">
+        <div class="container">
+            <h2>Success Stories from Fadis</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Thanks to Darul Hikma's scholarship, I was able to attend university. Now I'm an engineer, and I volunteer as a tutor to give back to my community."</p>
+                    <div class="testimonial-author">— Ahmed, 26</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The after-school program helped my son improve his grades and gain confidence. The tutors are wonderful role models."</p>
+                    <div class="testimonial-author">— Umm Khadijah, parent</div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ===== DONATION SECTION ===== -->
+<section class="donation-section fade-in">
+    <div class="container">
+        <h2>Support Our Education Programs</h2>
+        <p class="donation-intro">Your generosity helps us provide scholarships and tutoring to the youth of Fadis. Click below to donate via bank transfer or mobile money.</p>
+        
+        <div class="donation-cta">
+            <button id="donateNowBtn" class="btn btn-large">Donate Now</button>
+            <p class="donation-note">For large gifts or endowment, please <a href="contact.html">contact us</a>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Bank Selection Modal (unchanged) -->
+<div id="bankModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="paymentGrid" class="modal-view">
+            <h2>Select Payment Method</h2>
+            <div class="bank-grid">
+                <div class="bank-item" data-bank="cbe"><i class="fas fa-university"></i><span>CBE</span></div>
+                <div class="bank-item" data-bank="cbo"><i class="fas fa-university"></i><span>CBO</span></div>
+                <div class="bank-item" data-bank="rammis"><i class="fas fa-university"></i><span>Rammis Bank</span></div>
+                <div class="bank-item" data-bank="hijra"><i class="fas fa-university"></i><span>Hijra Bank</span></div>
+                <div class="bank-item" data-bank="telebirr"><i class="fas fa-mobile-alt"></i><span>Telebirr</span></div>
+                <div class="bank-item" data-bank="ebirr"><i class="fas fa-mobile-alt"></i><span>Ebirr</span></div>
+            </div>
+            <p class="modal-note">Click on a method to see account details.</p>
+        </div>
+        <div id="paymentDetails" class="modal-view" style="display: none;">
+            <button id="backToGridBtn" class="btn-back"><i class="fas fa-arrow-left"></i> Back</button>
+            <div id="detailsContent"></div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Darul Hikma. All rights reserved.</p>
+            <p class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Support Button -->
+    <div class="floating-support">
+        <button id="supportToggle" class="support-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div class="support-options" id="supportOptions">
+            <a href="https://wa.me/1234567890" target="_blank" class="support-item whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <button class="support-item ai-chat" id="aiChatBtn">
+                <i class="fas fa-robot"></i> AI Assistant
+            </button>
+        </div>
+    </div>
+
+    <!-- AI Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-modal-content">
+            <div class="chat-header">
+                <h3>Darul Hikma Assistant</h3>
+                <button class="close-chat" id="closeChat">&times;</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">
+                    <p>Assalamu Alaikum! I'm here to help with any questions about Darul Hikma.</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Type your question...">
+                <button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
