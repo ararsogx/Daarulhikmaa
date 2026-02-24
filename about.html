@@ -36,62 +36,62 @@
         </div>
     </section>
 
-    <!-- Mission & Vision Cards -->
+    <!-- Mission & Vision Cards with local focus -->
     <section class="about-mission fade-in">
         <div class="container">
             <div class="mission-vision-grid">
                 <div class="mission-card">
                     <i class="fas fa-bullseye"></i>
                     <h3>Our Mission</h3>
-                    <p>To nurture Muslim youth through holistic education, financial empowerment, and spiritual guidance, rooted in Islamic values.</p>
+                    <p>To nurture the youth of Fadis Woreda, East Hararge, through quality education rooted in Islamic values, empowering them to become confident and contributing members of society.</p>
                 </div>
                 <div class="vision-card">
                     <i class="fas fa-eye"></i>
                     <h3>Our Vision</h3>
-                    <p>A generation of confident, compassionate, and contributing Muslims who embody the teachings of Islam in their daily lives.</p>
+                    <p>A generation of educated, compassionate, and faithful Muslims from Fadis who lead their communities with wisdom and integrity.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Timeline -->
+    <!-- Timeline with local milestones -->
     <section class="timeline fade-in">
         <div class="container">
-            <h2>Our Journey</h2>
+            <h2>Our Journey in Fadis</h2>
             <div class="timeline-grid">
                 <div class="timeline-item">
                     <div class="timeline-year">2010</div>
                     <div class="timeline-content">
                         <h3>Foundation</h3>
-                        <p>Darul Hikma was established by a group of educators and community leaders.</p>
+                        <p>Darul Hikma was established by local educators and community leaders in Fadis.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-year">2013</div>
                     <div class="timeline-content">
-                        <h3>First Youth Camp</h3>
-                        <p>Launched our annual summer camp, now serving over 200 youth each year.</p>
+                        <h3>First Tutoring Program</h3>
+                        <p>Launched after‑school tutoring for primary school students.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-year">2017</div>
                     <div class="timeline-content">
                         <h3>Scholarship Program</h3>
-                        <p>Started providing financial aid for higher education; 50+ students supported.</p>
+                        <p>Started providing financial aid for higher education to Fadis students; 50+ supported.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-year">2022</div>
                     <div class="timeline-content">
                         <h3>Community Center</h3>
-                        <p>Opened a dedicated center offering classes, mentorship, and events.</p>
+                        <p>Opened a dedicated center in Fadis offering classes, mentorship, and events.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team -->
+    <!-- Team (unchanged) -->
     <section class="team fade-in">
         <div class="container">
             <h2>Meet Our Team</h2>
@@ -126,7 +126,41 @@
             </div>
         </div>
     </section>
+<!-- ===== DONATION SECTION ===== -->
+<section class="donation-section fade-in">
+    <div class="container">
+        <h2>Support Our Education Programs</h2>
+        <p class="donation-intro">Your generosity helps us provide scholarships and tutoring to the youth of Fadis. Click below to donate via bank transfer or mobile money.</p>
+        
+        <div class="donation-cta">
+            <button id="donateNowBtn" class="btn btn-large">Donate Now</button>
+            <p class="donation-note">For large gifts or endowment, please <a href="contact.html">contact us</a>.</p>
+        </div>
+    </div>
+</section>
 
+<!-- Bank Selection Modal (unchanged) -->
+<div id="bankModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="paymentGrid" class="modal-view">
+            <h2>Select Payment Method</h2>
+            <div class="bank-grid">
+                <div class="bank-item" data-bank="cbe"><i class="fas fa-university"></i><span>CBE</span></div>
+                <div class="bank-item" data-bank="cbo"><i class="fas fa-university"></i><span>CBO</span></div>
+                <div class="bank-item" data-bank="rammis"><i class="fas fa-university"></i><span>Rammis Bank</span></div>
+                <div class="bank-item" data-bank="hijra"><i class="fas fa-university"></i><span>Hijra Bank</span></div>
+                <div class="bank-item" data-bank="telebirr"><i class="fas fa-mobile-alt"></i><span>Telebirr</span></div>
+                <div class="bank-item" data-bank="ebirr"><i class="fas fa-mobile-alt"></i><span>Ebirr</span></div>
+            </div>
+            <p class="modal-note">Click on a method to see account details.</p>
+        </div>
+        <div id="paymentDetails" class="modal-view" style="display: none;">
+            <button id="backToGridBtn" class="btn-back"><i class="fas fa-arrow-left"></i> Back</button>
+            <div id="detailsContent"></div>
+        </div>
+    </div>
+</div>
     <footer>
         <div class="container footer-content">
             <p>&copy; 2025 Darul Hikma. All rights reserved.</p>
@@ -138,7 +172,7 @@
         </div>
     </footer>
 
-    <!-- Floating Support Button -->
+    <!-- Floating support and chat (same as before) -->
     <div class="floating-support">
         <button id="supportToggle" class="support-btn">
             <i class="fas fa-comment-dots"></i>
@@ -153,7 +187,6 @@
         </div>
     </div>
 
-    <!-- AI Chat Modal -->
     <div class="chat-modal" id="chatModal">
         <div class="chat-modal-content">
             <div class="chat-header">
@@ -162,7 +195,7 @@
             </div>
             <div class="chat-body" id="chatBody">
                 <div class="chat-message bot">
-                    <p>Assalamu Alaikum! I'm here to help with any questions about Darul Hikma. You can ask about our programs, mission, contact info, and more.</p>
+                    <p>Assalamu Alaikum! I'm here to help with any questions about Darul Hikma.</p>
                 </div>
             </div>
             <div class="chat-footer">
@@ -174,4 +207,4 @@
 
     <script src="main.js"></script>
 </body>
-</html>
+                                                           </html>
